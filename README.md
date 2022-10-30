@@ -6,4 +6,4 @@ Please download all the files in one folder and run URLShortener.py only.
 
 ENJOY :)
 
-CREDIT TO PRIYA PEDAMKAR FROM EDUCBA
+REFERENCES TO PRIYA PEDAMKAR FROM EDUCBA
