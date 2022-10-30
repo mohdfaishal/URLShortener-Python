@@ -3,7 +3,7 @@ import pyshorteners
 from tkinter import *
 
 root = Tk()
-root.geometry("350x200")
+root.geometry("350x250") # Changes the dimensions from 350x200 to 350x250
 root.title("URL Shortener")
 root.configure(bg="#8ee5da")
 url = StringVar()
@@ -19,9 +19,9 @@ def copyurl():
     pyperclip.copy(url_short)
 
 Label(root, text="URL Shortener App", font="Verdana").pack(pady=10)
-Entry(root, textvariable=url).pack(pady=10)
+Entry(root, textvariable=url, width=35).pack(pady=10) # Adding width=35
 Button(root, text="Generate Short URL", command=urlshortener).pack(pady=10)
-Entry(root, textvariable=url_address).pack(pady=10)
+Entry(root, textvariable=url_address, width=35).pack(pady=10) # Adding width=35
 Button(root, text="Copy URL", command=copyurl).pack(pady=5)
 
 root.mainloop()
